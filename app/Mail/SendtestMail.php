@@ -11,15 +11,15 @@ class SendtestMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $name ;
+    public $result ;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($result)
     {
-        $this->name = "himanshu";
+        $this->result = "your registrasion successfully";
     }
 
     /**
@@ -29,6 +29,6 @@ class SendtestMail extends Mailable
      */
     public function build()
     {
-        return $this->view('email');
+        return $this->view('email')->with("result",$this->result);
     }
 }

@@ -11,23 +11,24 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendtestMail;
 use App\Models\User;
+use App\Models\Event;
+
 
 
 class SendtestMailjob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-public User $user;
+public Event $result;
 
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct(User $user)
+    public function __construct(Event $result)
     {
-        $this->user = $user;
-    }
+        $this->result = $result;    }
 
     /**
      * Execute the job.
@@ -35,8 +36,8 @@ public User $user;
      * @return void
      */
     public function handle()
-    {
-        Mail::to($this->user->email, "send Test mail")->send(new SendtestMail());
+    {    $email = new SendtestMail($this->result);
+        Mail::to($this->result->email, "send Test mail")->send($email);
 
     }
 }
