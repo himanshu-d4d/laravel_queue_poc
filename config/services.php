@@ -30,4 +30,21 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'facebook' => [
+        'client_id' => "405053704529478",
+        'client_secret' => "f889db38780635959e1b61105fec95e6",
+        'redirect' => 'http://localhost:8000/feceRes',
+    ],
+
+    'linkedin' => [
+        'client_id' => "78alzj540njwd7",
+        'client_secret' => "B85wWUOIAV0HFr6Y",
+        'redirect' => 'http://localhost:8000/linkRes',
+    ],
+    'google' => [
+        'client_id' => "10336446291-48tnv18k67v7upcaigiq7vq4gou5bnqf.apps.googleusercontent.com",
+        'client_secret' => "wnXvB7cGh2Hd1vBzZNprIq24",
+        'redirect' => 'http://localhost:8000/googleRes',
+    ],
+
 ];

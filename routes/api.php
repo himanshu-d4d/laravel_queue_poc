@@ -18,4 +18,6 @@ use App\Http\Controllers\UserRegistrasionController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::post('registrasion', [UserRegistrasionController::class, 'NewUser']);
+Route::get('fb', [UserRegistrasionController::class, 'fbButton']);
+Route::get('fbsub', [UserRegistrasionController::class, 'fbSubmit']);
+Route::post('feceRes', [UserRegistrasionController::class, 'feceResponce']);
