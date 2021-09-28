@@ -15,9 +15,15 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
+        \SocialiteProviders\Manager\SocialiteWasCalled::class => [
+            // ... other providers
+            'SocialiteProviders\\Instagram\\InstagramExtendSocialite@handle',
+        ],                                                                                              
         Registered::class => [
             SendEmailVerificationNotification::class,
+            
         ],
+        
     ];
 
     /**

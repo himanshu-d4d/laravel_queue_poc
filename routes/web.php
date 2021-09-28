@@ -39,8 +39,8 @@ Route::get('deshboard', [UserRegistrasionController::class, 'deshboard']);
 Route::get('googlesub', [UserRegistrasionController::class, 'googleSubmit']);
 Route::get('googleRes', [UserRegistrasionController::class, 'googleResponse']);
 
-// Route::get('instaSubmit', [UserRegistrasionController::class, 'instaSubmit']);
-// Route::get('instaResponse', [UserRegistrasionController::class, 'instaResponse']);
+ Route::get('instaSubmit', [UserRegistrasionController::class, 'instaSubmit']);
+Route::get('instaResponse', [UserRegistrasionController::class, 'instaResponse']);
 
 
 

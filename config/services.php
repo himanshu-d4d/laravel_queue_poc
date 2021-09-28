@@ -47,4 +47,16 @@ return [
         'redirect' => 'http://localhost:8000/googleRes',
     ],
 
+    'instagram' => [
+        'client_id' => "3029392174016512",
+        'client_secret' => "50df0c2a037c9bba30099c306539fe46",
+        'redirect' => 'https://himanshudeveloper.com/instaResponse',
+    ],
+
+    'instagrambasic' => [    
+        'client_id' => '580754176614267',  
+        'client_secret' => 'b0ebb0b93bb0e8a4ad7718a0b7614b71',  
+        'redirect' => 'https://himanshudeveloper.com/instaResponse'
+      ],
+
 ];

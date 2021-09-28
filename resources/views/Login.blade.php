@@ -25,6 +25,8 @@
 <a href="fbsub"><img src ="{{url('social_image/Facebook.png')}}"  style = "height:40px"></a>
 <a href="googlesub"><img src ="{{url('social_image/Google-plus-icon.png')}}"  style = "height:40px"></a>
 <a href="linkSub"><img src ="{{url('social_image/linkedin_icon.jpg')}}"  style = "height:45px"></a>
+<a href="instaSubmit"><img src ="{{url('social_image/instagram.png')}}"  style = "height:40px"></a>
+
 
 
 
